@@ -5,29 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microverse</title>
-    <link href="./output.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
     </link>
 </head>
 
 <body>
     <section id="section-1">
         <header>
-            <div>
+            <div class="logo">
                 <span>MICROVERSE LABS</span>
                 <img src="./icon.png">
             </div>
-            <div>
+            <div class="header-actions">
                 <span>Technologies</span>
                 <button>Contact Us</button>
             </div>
         </header>
         <div class="carousal">
-            <div class="img-container">
-                <img src="./people-1.png">
+            <div class="img-container active">
+                <!-- <img src=""> -->
                 <label>Product Development</label>
             </div>
             <div class="img-container">
-                <img src="./people-2-small.png">
+                <!-- <img src="./people-2-small.png"> -->
                 <label>Consulting</label>
             </div>
         </div>
@@ -38,12 +38,28 @@
             <h4>Assisting your innovation journey from strategy to deployment.</h4>
         </div>
         <div class="marquee-container">
-            <div class="marquee">
-                <span>Machine Learning</span>
-                <span>AI Focus</span>
-                <span>Innovation</span>
-                <span>Analytics</span>
-            </div>
+            <!-- <div class="marquee"> -->
+                <div id="div1" class="content">
+                    <span>Machine Learning</span>
+                    <img src="./marquee-separator.png">
+                    <span>AI Focus</span>
+                    <img src="./marquee-separator.png">
+                    <span>Innovation</span>
+                    <img src="./marquee-separator.png">
+                    <span>Analytics</span>
+                    <img src="./marquee-separator.png">
+                </div>
+                <div id="div2" class="content">
+                    <span>Machine Learning</span>
+                    <img src="./marquee-separator.png">
+                    <span>AI Focus</span>
+                    <img src="./marquee-separator.png">
+                    <span>Innovation</span>
+                    <img src="./marquee-separator.png">
+                    <span>Analytics</span>
+                    <img src="./marquee-separator.png">
+                </div>
+            <!-- </div> -->
         </div>
     </section>
 </body>

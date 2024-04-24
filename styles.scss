@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$section-padding: 9%;
+$section-content-width: 82%;
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src:
+        local("Gilroy-Bold"),
+        url(./fonts/Gilroy-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    src:
+        local("Gilroy-Medium"),
+        url(./fonts/Gilroy-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Gilroy-Light";
+    src:
+        local("Gilroy-Light"),
+        url(./fonts/Gilroy-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Gilroy-Regular";
+    src:
+        local("Gilroy-Regular"),
+        url(./fonts/Gilroy-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Gilroy-SemiBold";
+    src:
+        local("Gilroy-SemiBold"),
+        url(./fonts/Gilroy-SemiBold.ttf) format("truetype");
+}
+
+section#section-1 {
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    overflow-x: clip;
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 $section-padding;
+        width: $section-content-width;
+        height: fit-content;
+        align-items: center;
+        margin-top: 4.3011vh;
+        margin-bottom: 2.6882vh;
+        .logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 16.132rem;
+            height: 2.44rem;
+            span {
+                font-family: Gilroy-Regular;
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 28.8px;
+                text-align: left;
+                color: #555551;
+            }
+            img {
+                width: 2.516rem;
+                height: 2.44rem;
+            }
+        }
+        .header-actions {
+            width: 20.48rem;
+            height: 3rem;
+            border-radius: 8px 0px 0px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+                font-family: Gilroy-Regular;
+                font-size: 1.125rem;
+                font-weight: 400;
+                line-height: 1.35rem;
+                text-align: left;
+            }
+            button {
+                font-family: Gilroy-Medium;
+                font-size: 1.125rem;
+                font-weight: 400;
+                line-height: 1.364rem;
+                color: #0e1b29;
+                text-align: left;
+                width: 10.375rem;
+                height: 3rem;
+                text-align: center;
+                background-color: transparent;
+                width: 166px;
+                border-radius: 8px;
+                border: 2px 0px 0px 0px solid #0e1b29;
+            }
+        }
+    }
+    .carousal {
+        margin-top: 2.6882vh;
+        margin-bottom: 1.57vh;
+        width: 82.0576vw;
+        height: 41.2451vh;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 $section-padding;
+        width: $section-content-width;
+        .img-container {
+            max-height: 100%;
+            border-radius: 1.5rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            width: 9.4444vw;
+            label {
+                font-family: Gilroy-Medium;
+                font-size: 2rem;
+                font-weight: 400;
+                line-height: 2.426rem;
+                text-align: left;
+                position: absolute;
+                top: 40.5vh;
+                right: 2.5vw;
+                transform: rotate(-90deg);
+                color: #ffffff;
+            }
+            &:nth-child(1) {
+                background-image: url("./people-1.png");
+            }
+            &:nth-child(2) {
+                background-image: url("./people-2-small.png");
+            }
+            &.active {
+                width: 71.7361vw;
+                height: 100%;
+                label {
+                    font-family: Gilroy-SemiBold;
+                    font-size: 2.5rem;
+                    top: 46.0672vh;
+                    left: 3.3646vw;
+                    line-height: 3.063rem;
+                    transform: rotate(0);
+                }
+            }
+        }
+    }
+    .tagline {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 $section-padding;
+        width: $section-content-width;
+        margin-top: 1.57vh;
+        margin-bottom: 6.5vh;
+        h2 {
+            font-family: Gilroy-Light;
+            font-size: 5rem;
+            font-weight: 400;
+            line-height: 4.625rem;
+            text-align: left;
+        }
+        h4 {
+            font-family: Gilroy-Regular;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 2.75rem;
+            text-align: left;
+        }
+    }
+    .marquee-container {
+        height: 20.1613vh;
+        background-color: #f4f4f4;
+        margin-top: 6.5vh;
+        display: flex;
+        align-items: center;
+        overflow-y: hidden;
+        width: max-content;
+        #div1 {
+            animation: marquee 10s linear infinite;
+        }
+
+        #div2 {
+            animation: marquee2 10s linear infinite;
+            animation-delay: 5s;
+        }
+        .content {
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            span {
+                font-family: Gilroy-Regular;
+                font-size: 2.5rem;
+                font-weight: 400;
+                line-height: 4.375rem;
+                text-align: left;
+            }
+            img {
+                width: 2.2222vw;
+                height: 4.2406vh;
+            }
+        }
+    }
+}
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee2 {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-200%);
+    }
+}
