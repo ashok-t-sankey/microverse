@@ -18,5 +18,14 @@
         "titleBar.inactiveBackground": "#e3a00c99",
         "titleBar.inactiveForeground": "#15202b99"
     },
-    "peacock.color": "#e3a00c"
+    "peacock.color": "#e3a00c",
+    "emeraldwalk.runonsave": {
+    
+        "commands": [
+            {
+                "match": ".*",
+                "cmd": "sass styles.scss styles.css"
+            }
+        ]
+    }
 }
