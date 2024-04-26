@@ -64,56 +64,56 @@ section#section-1 {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 16.132rem;
-            height: 2.44rem;
+            width: 17.9243vw;
+            height: 3.7977vh;
             span {
                 font-family: Gilroy-Regular;
-                font-size: 1.5rem;
+                font-size: 1.5vw;
                 font-weight: 400;
-                line-height: 28.8px;
+                line-height: 2.8016vh;
                 text-align: left;
                 color: #555551;
             }
             img {
-                width: 2.516rem;
-                height: 2.44rem;
+                width: 2.7951vw;
             }
         }
         .header-actions {
-            width: 20.48rem;
-            height: 3rem;
-            border-radius: 8px 0px 0px 0px;
+            width: 22.7556vw;
+            height: 4.6693vh;
             display: flex;
             justify-content: space-between;
             align-items: center;
             span {
                 font-family: Gilroy-Regular;
-                font-size: 1.125rem;
+                font-size: 1.125vw;
                 font-weight: 400;
-                line-height: 1.35rem;
+                line-height: 1.35vw;
                 text-align: left;
             }
-            button {
+            .contact-link {
                 font-family: Gilroy-Medium;
-                font-size: 1.125rem;
+                font-size: 1.125vw;
                 font-weight: 400;
-                line-height: 1.364rem;
+                line-height: 1.364vw;
                 color: #0e1b29;
                 text-align: left;
-                width: 10.375rem;
-                height: 3rem;
+                width: 11.5278vw;
+                height: 100%;
                 text-align: center;
                 background-color: transparent;
-                width: 166px;
+                width: 11.5278vw;
                 border-radius: 8px;
-                border: 2px 0px 0px 0px solid #0e1b29;
+                border: 2px solid #0e1b29;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
     .carousal {
         margin-top: 2.6882vh;
         margin-bottom: 1.57vh;
-        width: 82.0576vw;
         height: 41.2451vh;
         display: flex;
         justify-content: space-between;
@@ -121,7 +121,7 @@ section#section-1 {
         width: $section-content-width;
         .img-container {
             max-height: 100%;
-            border-radius: 1.5rem;
+            border-radius: 1.5vw;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -129,14 +129,14 @@ section#section-1 {
             width: 9.4444vw;
             label {
                 font-family: Gilroy-Medium;
-                font-size: 2rem;
+                font-size: 2vw;
                 font-weight: 400;
-                line-height: 2.426rem;
                 text-align: left;
                 position: absolute;
-                top: 40.5vh;
-                right: 2.5vw;
+                bottom: 2vh;
+                left: 1.8vw;
                 transform: rotate(-90deg);
+                transform-origin: left;
                 color: #ffffff;
             }
             &:nth-child(1) {
@@ -150,10 +150,9 @@ section#section-1 {
                 height: 100%;
                 label {
                     font-family: Gilroy-SemiBold;
-                    font-size: 2.5rem;
-                    top: 46.0672vh;
-                    left: 3.3646vw;
-                    line-height: 3.063rem;
+                    font-size: 2.5vw;
+                    bottom: 3.1128vh;
+                    left: 3.5vw;
                     transform: rotate(0);
                 }
             }
@@ -162,40 +161,41 @@ section#section-1 {
     .tagline {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        gap: 7vw;
         padding: 0 $section-padding;
         width: $section-content-width;
         margin-top: 1.57vh;
         margin-bottom: 6.5vh;
         h2 {
             font-family: Gilroy-Light;
-            font-size: 5rem;
+            font-size: 4.5vw;
             font-weight: 400;
-            line-height: 4.625rem;
             text-align: left;
         }
         h4 {
             font-family: Gilroy-Regular;
-            font-size: 2rem;
+            font-size: 2vw;
             font-weight: 400;
-            line-height: 2.75rem;
-            text-align: left;
+            text-align: justify;
         }
     }
     .marquee-container {
-        height: 20.1613vh;
+        height: 14.5914vh;
         background-color: #f4f4f4;
         margin-top: 6.5vh;
+        margin-bottom: 1.8181vh;
         display: flex;
         align-items: center;
         overflow-y: hidden;
         width: max-content;
         #div1 {
-            animation: marquee 10s linear infinite;
+            animation: marquee 15s linear infinite;
         }
 
         #div2 {
-            animation: marquee2 10s linear infinite;
-            animation-delay: 5s;
+            animation: marquee2 15s linear infinite;
+            animation-delay: 7.5s;
         }
         .content {
             width: 100vw;
@@ -205,15 +205,62 @@ section#section-1 {
             height: 100%;
             span {
                 font-family: Gilroy-Regular;
-                font-size: 2.5rem;
+                font-size: 2.5vw;
                 font-weight: 400;
-                line-height: 4.375rem;
+                line-height: 4.375vw;
                 text-align: left;
             }
             img {
                 width: 2.2222vw;
                 height: 4.2406vh;
             }
+        }
+    }
+    &.wide-view {
+        .carousal {
+            height: 65vh;
+            .img-container {
+                label {
+                    font-size: 1.5vw;
+                }
+                &.active label {
+                    font-size: 2vw;
+                }
+            }
+        }
+        .tagline {
+            h2 {
+                font-size: 3.5vw;
+            }
+            h4 {
+                font-size: 1.8vw;
+            }
+        }
+        .marquee-container {
+            .content {
+                span {
+                    font-size: 1.7vw;
+                }
+            }
+        }
+    }
+    &.wider-view {
+        header {
+            margin-top: 3.5vh;
+            margin-bottom: 2vh;
+        }
+        .tagline {
+            margin-top: 1vh;
+            h2 {
+                font-size: 3.2vw;
+            }
+            h4 {
+                font-size: 1.8vw;
+            }
+        }
+        .marquee-container {
+            margin-top: 6vh;
+            height: 15vh;
         }
     }
 }

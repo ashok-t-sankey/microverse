@@ -18,7 +18,7 @@
             </div>
             <div class="header-actions">
                 <span>Technologies</span>
-                <button>Contact Us</button>
+                <span class="contact-link">Contact Us</span>
             </div>
         </header>
         <div class="carousal">
@@ -39,29 +39,49 @@
         </div>
         <div class="marquee-container">
             <!-- <div class="marquee"> -->
-                <div id="div1" class="content">
-                    <span>Machine Learning</span>
-                    <img src="./marquee-separator.png">
-                    <span>AI Focus</span>
-                    <img src="./marquee-separator.png">
-                    <span>Innovation</span>
-                    <img src="./marquee-separator.png">
-                    <span>Analytics</span>
-                    <img src="./marquee-separator.png">
-                </div>
-                <div id="div2" class="content">
-                    <span>Machine Learning</span>
-                    <img src="./marquee-separator.png">
-                    <span>AI Focus</span>
-                    <img src="./marquee-separator.png">
-                    <span>Innovation</span>
-                    <img src="./marquee-separator.png">
-                    <span>Analytics</span>
-                    <img src="./marquee-separator.png">
-                </div>
+            <div id="div1" class="content">
+                <span>Machine Learning</span>
+                <img src="./marquee-separator.png">
+                <span>AI Focus</span>
+                <img src="./marquee-separator.png">
+                <span>Innovation</span>
+                <img src="./marquee-separator.png">
+                <span>Analytics</span>
+                <img src="./marquee-separator.png">
+            </div>
+            <div id="div2" class="content">
+                <span>Machine Learning</span>
+                <img src="./marquee-separator.png">
+                <span>AI Focus</span>
+                <img src="./marquee-separator.png">
+                <span>Innovation</span>
+                <img src="./marquee-separator.png">
+                <span>Analytics</span>
+                <img src="./marquee-separator.png">
+            </div>
             <!-- </div> -->
         </div>
     </section>
+    <script>
+        function updateViewportSize() {
+            const ratio = window.innerWidth / window.innerHeight;
+            if (ratio >= 1.5) {
+                document.getElementById("section-1")?.classList.add("wide-view");
+                if (ratio > 2) {
+                    document.getElementById("section-1")?.classList.add("wider-view");
+                } else {
+                    document.getElementById("section-1")?.classList.remove("wider-view");
+                }
+            } else {
+                document.getElementById("section-1")?.classList.remove("wider-view");
+                document.getElementById("section-1")?.classList.remove("wide-view");
+            }
+        }
+
+        window.addEventListener('resize', updateViewportSize);
+        // Initial call to set initial values
+        updateViewportSize();
+    </script>
 </body>
 
 </html>
